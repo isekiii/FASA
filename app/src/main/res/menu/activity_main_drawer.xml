@@ -10,15 +10,15 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_exercise"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Exercises" />
         <item
-            android:id="@+id/credits"
+            android:id="@+id/nav_credits"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Credits" />
         <item
-            android:id="@+id/help"
+            android:id="@+id/nav_help"
             android:icon="@drawable/ic_launcher_foreground"
             android:title="Help" />
     </group>

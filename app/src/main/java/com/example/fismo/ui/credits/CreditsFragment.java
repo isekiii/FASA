@@ -12,28 +12,30 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.fismo.databinding.FragmentCreditsBinding;
 import com.example.fismo.databinding.FragmentGalleryBinding;
 
 public class CreditsFragment extends Fragment {
 
     private CreditsViewModel creditsViewModelViewModel;
-    private FragmentGalleryBinding binding;
+    private FragmentCreditsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         creditsViewModelViewModel =
                 new ViewModelProvider(this).get(CreditsViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentCreditsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
-        final TextView textView = binding.textGallery;
+        /*
+        final TextView textView = binding.;
         creditsViewModelViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
         });
+        */
         return root;
     }
 

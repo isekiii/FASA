@@ -12,14 +12,19 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.fismo.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_exercise"
+        android:name="com.example.fismo.ui.Exercise.ExerciseFragment"
+        android:label="Exercise"
+        tools:layout="@layout/fragment_exercise" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.fismo.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_credits"
+        android:name="com.example.fismo.ui.credits.CreditsFragment"
+        android:label="Credits"
+        tools:layout="@layout/fragment_credits" />
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.example.fismo.ui.help.HelpFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_help" />
 </navigation>

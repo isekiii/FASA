@@ -13,27 +13,22 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.fismo.databinding.FragmentGalleryBinding;
+import com.example.fismo.databinding.FragmentHelpBinding;
 
 public class HelpFragment extends Fragment {
 
     private HelpViewModel helpViewModelViewModel;
-    private FragmentGalleryBinding binding;
+    private FragmentHelpBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         helpViewModelViewModel =
                 new ViewModelProvider(this).get(HelpViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentHelpBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
-        helpViewModelViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
         return root;
     }
 
