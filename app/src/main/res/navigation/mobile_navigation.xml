@@ -16,6 +16,16 @@
         android:name="com.example.fismo.ui.Exercise.ExerciseFragment"
         android:label="Exercise"
         tools:layout="@layout/fragment_exercise" />
+    <fragment
+        android:id="@+id/nav_achievements"
+        android:name="com.example.fismo.ui.achievements.AchievementsFragment"
+        android:label="Achievements"
+        tools:layout="@layout/fragment_achievements" />
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.example.fismo.ui.info.InfoFragment"
+        android:label="Info"
+        tools:layout="@layout/fragment_info" />
 
     <fragment
         android:id="@+id/nav_credits"

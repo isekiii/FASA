@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.info.InfoFragment">
+
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13 Ways to Get the Most Out of Your Workout, According to Research"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No one hits the gym hoping for so-so results. You go in wanting to get 100% out of every rep, run and hard-earned bead of sweat. Here, 13 incredibly efficient strategies, courtesy of the latest research, to get the biggest benefit out of every one of your workouts:
+\n•	Lift weights
+10,500 adults, those who spent 20 minutes a day weight training gained less abdominal fat over the course of 12 years
+\n•	Listen to music
+30 men and women, people who listened to music (especially slow music) after their workout recovered faster than did those who went sans tunes
+\n•	Swap stretching for a dynamic warmup
+Don’t stretch in vain. In one Austin State University study, people who warmed up with light leg extensions and squats were able to squat with 8.36% more weight during their workout than if they had performed typical
+\n•	Preface your workout with carbs
+Carbs are your body’s primary fuel for any high-intensity workout, and when your body is fueled, your body is going to put forth a better effort and get a better value, both in terms of caloric expenditure and muscle growth, than it would if you were in fasted state
+\n•	Do intervals
+Minute per minute, high-intensity intervals—periods of all-out effort interspersed with short, low-intensity “breaks”—come with more cardiovascular and fat-loss benefits than any other workout, says Wall
+\n•	Drink water
+Losing just 2% of your body weight in fluids—some gym-goers sweat out 6 to 10%—can make your workout feel harder, reduce your exercise performance and reduce your body’s ability to recover after you leave the gym, according to a review from the University of North Carolina.
+\n•	Use free weights
+Exercises using free weights like dumbbells, kettlebells and barbells lead to greater hormonal responses compared to similar exercises performed on exercise machines, according to a 2014 Journal of Strength and Conditioning Research study
+"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asdasfsad"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asdasfsad"
+                android:textSize="20sp"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
