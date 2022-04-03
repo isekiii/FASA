@@ -10,22 +10,29 @@
 
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="13 Ways to Get the Most Out of Your Workout, According to Research"
-                android:textSize="30sp"/>
+                android:textSize="30sp" />
+
+            <ImageView
+                android:layout_width="395dp"
+                android:layout_height="175dp"
+                android:src="@mipmap/ic_13waysbanner_foreground" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -45,19 +52,230 @@ Losing just 2% of your body weight in fluids—some gym-goers sweat out 6 to 10%
 \n•	Use free weights
 Exercises using free weights like dumbbells, kettlebells and barbells lead to greater hormonal responses compared to similar exercises performed on exercise machines, according to a 2014 Journal of Strength and Conditioning Research study
 "
-                android:textSize="12sp"/>
+                android:textSize="12sp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="asdasfsad"
-                android:textSize="20sp"/>
+                android:text="The 35 Best Workout Tips of all Time By Mark Anders"
+                android:textSize="30sp" />
+            <ImageView
+                android:layout_width="395dp"
+                android:layout_height="175dp"
+                android:src="@mipmap/ic_workout_banner_foreground"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="asdasfsad"
-                android:textSize="20sp"/>
+                android:text="The Best Cardio Workout Tips\n
+•	Always warm-up and cool down \n
+•	Take this jump-rope challenge \n
+•	Don't cruise through cardio \n
+•	Tone up on the treadmill\n
+•	Revamp your running routine\n
+•	Use the talk test\n
+•	Get a jump on weight loss\n
+•	Watch the clock to lose weight\n
+•	Power up your runs\n
+The Best Strength Training Workout Tips\n
+•	Lift like you mean it\n
+•	Try this all-in-one toner\n
+•	Balance your body\n
+•	Work out during your workday\n
+•	Take a day off between weight-lifting sessions\n
+•	Super-sculpt your butt\n
+•	Don't let your routine become rote\n
+•	Intensify your push-up\n
+•	Blast calories with circuits\n
+•	Break out the shovel\n
+The Best Running and Walking Workout Tips\n
+•	Loosen up\n
+•	Write it down\n
+•	Move it like you mean it\n
+•	Run (or walk) for the hills!\n
+The Best Workout Tips for Strong Abs\n
+•	Stay in control\n
+•	Paddle your way to a stronger core\n
+•	Add the bike to your ab routine\n
+•	Fire 'em up\n
+"
+                android:textSize="12sp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exercise - the low-down on hydration"
+                android:textSize="30sp" />
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•	It’s important to replace fluids lost through sweat when exercising. \n
+•	The best fluid is water. \n
+•	When dehydrated, your mind and body cannot function at their best.\n
+•	Your body will show symptoms when it is dehydrated – such as darker urine, and lack of sweat when exercising.\n
+•	If you are an athlete, seek advice about fluid replacement from a health professional.
+"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eating and exercise: 5 tips to maximize your workouts"
+                android:textSize="30sp" />
+            <ImageView
+                android:layout_width="395dp"
+                android:layout_height="175dp"
+                android:src="@mipmap/ic_breakfast_foreground"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eating and exercise go hand in hand. When and what you eat can be important to how you feel when you exercise, whether it's a casual workout or training for a competition. Consider these eating and exercise tips.
+•	Eat a healthy breakfast
+If you exercise in the morning, get up early enough to finish breakfast at least one hour before your workout. Be well fueled going into a workout.
+Good breakfast options include: \n
+1.	Whole-grain cereals or bread \n
+2.	Low-fat milk \n
+3.	Juice \n
+4.	A banana \n
+5.	Yogurt \n
+•	Watch the portion size \n
+Be careful not to overdo it when it comes to how much you eat before exercise. The general guidelines suggest:
+
+    Large meals. Eat these at least 3 to 4 hours before exercising.
+    Small meals or snacks. Eat these about 1 to 3 hours before exercising. \n
+•	Snack well \n
+Good snack options include:
+
+i.	An energy bar \n
+ii.	A banana, an apple or other fresh fruit \n
+iii.	Yogurt \n
+iv.	A fruit smoothie \n
+v.	A whole-grain bagel or crackers \n
+vi.	A low-fat granola bar \n
+vii.	A peanut butter sandwich \n
+viii.	Sports drink or diluted juice \n
+
+"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What to Eat Before and After a Workout"
+                android:textSize="30sp" />
+            <ImageView
+                android:layout_width="395dp"
+                android:layout_height="175dp"
+                android:src="@mipmap/ic_whateat_foreground"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The right foods before and after exercise can boost your results. Like a car uses gas, your body burns carbohydrates for fuel. They give you the energy to power through that jog or fitness class. When you’re done, refueling with a combination of protein and carbs can help you rebuild muscle. Ready to make the most of your workout? Aim to have a snack or mini meal 1 to 3 hours before your workout. You can have tummy troubles if you chow down right before. That’s because more blood goes to your muscles during exercise, leaving less for digestion. After exercise, your body is ready to refuel and rebuild muscle tissue. Eat or drink within an hour of finishing.
+"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="After Workout Drinks by Kathleen Ferraro"
+                android:textSize="30sp" />
+            <ImageView
+                android:layout_width="395dp"
+                android:layout_height="175dp"
+                android:src="@mipmap/ic_drinks_foreground"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From building strength to boosting your mood, there are all sorts of benefits to exercising regularly. But a tough workout can leave you running low on water or nutrients like electrolytes, both of which can contribute to feeling dehydrated, tired, or sore, says Lauren Minchen, MPH, RDN, CDN, a registered dietitian, and nutrition consultant for AI-driven visual diet diary app Freshbit.
+Water – Feeling tired or thirsty during or after your workout? Though it may sound obvious, water is your surest bet to replenish, says Minchen. Every cell, tissue, and organ in our bodies uses water to function.
+            Electrolyte Drinks – Electrolytes are minerals that your body needs to function well, including sodium, chloride, potassium, magnesium, and calcium. But an intense workout—and all the sweating that comes with it—can drain your body of those nutrients, resulting in an electrolyte imbalance that can leave you feeling run down and dehydrated.
+            Coconut Water- It's a natural source of electrolytes like potassium, sodium, and magnesium, making coconut water a great pick to help you replenish depleted minerals after a sweaty workout.
+            "
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The 9 Best Diet Plans for Your Overall Health"
+                android:textSize="30sp" />
+            <ImageView
+                android:layout_width="395dp"
+                android:layout_height="175dp"
+                android:src="@mipmap/ic_diets_foreground"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diets aren’t just for weight loss. While changing your diet can be one of the best ways to lose weight, it can also be a gateway to improving your habits, focusing on your health, and leading a more active lifestyle.
+•	The Mediterranean diet - The Mediterranean diet has long been considered the gold standard for nutrition, disease prevention, wellness, and longevity. This is based on its nutrition benefits and sustainability. \n
+•	The Dash diet - Dietary Approaches to Stop Hypertension, or DASH, is an eating plan designed to help treat or prevent high blood pressure, which is clinically known as hypertension. It emphasizes eating plenty of fruits, vegetables, whole grains, and lean meats. It is low in salt, red meat, added sugars, and fat. \n
+•	Plant-based and flexitarian diets - Vegetarianism and veganism are the most popular versions of plant-based diets, which restrict animal products for health, ethical, and environmental reasons. However, more flexible plant-based diets also exist, such as the flexitarian diet. This is a plant-based diet that allows eating animal products in moderation. \n
+•	The Mind diet - The Mediterranean-DASH Intervention for Neurodegenerative Delay (MIND) diet combines aspects of the Mediterranean and DASH diets to create an eating pattern that focuses on brain health.
+"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What to eat to gain muscle mass effectively"
+                android:textSize="30sp" />
+            <ImageView
+                android:layout_width="395dp"
+                android:layout_height="175dp"
+                android:src="@mipmap/ic_mass_foreground"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Building muscle takes hard work, both in the gym and in the kitchen. To gain muscle mass, it requires a combination of strength training and cardio exercises alongside a healthy and balanced diet. Protein can particularly help in the process! The amount of protein you need will look different for everyone depending on factors such as your lifestyle, genetics and fitness goals, but there are some foods that are always great options to consider. When you’re trying to build muscle and strength, it’s important that you tailor your training plan and your diet to meet your needs. To help gain muscle mass, combine the following foods with fruit and vegetables:\n
+•	Lean Meat \n
+•	Eggs\n
+•	Dairy products\n
+•	Fish\n
+•	Whole grains\n
+•	Beans and lentils\n
+•	Whey protein\n
+"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27 Health and Nutrition Tips That Are Actually Evidence-Based"
+                android:textSize="30sp" />
+            <ImageView
+                android:layout_width="395dp"
+                android:layout_height="175dp"
+                android:src="@mipmap/ic_27health_foreground"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It’s easy to get confused when it comes to health and nutrition. Even qualified experts often seem to hold opposing opinions, which can make it difficult to figure out what you should actually be doing to optimize your health. Here are 27 health and nutrition tips that are based on scientific evidence:
+•	Limit sugary drinks - findings from several studies point to sugar-sweetened beverages increasing risk of heart disease and type 2 diabetes, even in people who are not carrying excess body fat.\n
+•	Eat nuts and seeds - Nuts may help you lose weight and reduce the risk of developing type 2 diabetes and heart disease.\n
+•	Avoid ultra-processed foods - Ultra-processed foods are foods containing ingredients that are significantly modified from their original form. They often contain additives like added sugar, highly refined oil, salt, preservatives, artificial sweeteners, colors, and flavors as well.\n
+•	Don’t fear coffee - It’s rich in antioxidants, and some studies have linked coffee intake to longevity and a reduced risk of type 2 diabetes, Parkinson’s and Alzheimer’s diseases, and numerous other illnesses.\n
+•	Eat fatty fish - Fish is a great source of high-quality protein and healthy fat. This is particularly true of fatty fish, such as salmon, which is loaded with anti-inflammatory omega-3 fatty acids and various other nutrients.\n
+
+"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Workout-supplements"
+                android:textSize="30sp" />
+            <ImageView
+                android:layout_width="395dp"
+                android:layout_height="175dp"
+                android:src="@mipmap/ic_supplements_foreground"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitness gurus and blogs touting these products as crucial for peak performance, fat loss, and explosive muscle growth in combination with complicated scientific-sounding names and labels might have you believing you can’t effectively exercise without them. But do these supplements live up to the hype, and are they even necessary—or in some cases, safe?\n
+•	Pre-Workout Supplements - are designed to provide energy and aid endurance throughout a workout. They are typically taken 15-30 minutes before a workout, but can also be consumed during exercise. These supplements have also been categorized as apparently safe and having strong evidence to support efficacy by the International Society of Sports Nutrition.\n
+•	Beta-Alanine- is an amino acid that is produced in the liver and also found in fish, poultry, and meat. When dosed at 4–6g/day for 2–4 weeks, this supplement has been shown to improve exercise performance, particularly for high-intensity exercise lasting 1–4 minutes, such as high-intensity interval training (HIIT) or short sprints. It has also been shown to reduce neuromuscular fatigue, particularly in older adults. beta-alanine supplementation currently appears to be safe in healthy populations at recommended doses, but it is important to consult with your doctor before beginning supplementation.\n
+•	Creatine - Creatine is a naturally occurring compound found in skeletal muscle that is synthesized in the body from amino acids and can be obtained from red meat and seafood. The International Society of Sports Nutrition, the American Dietetic Association, and the American College of Sports Medicine have all published statements supporting creatine supplementation as an effective way of increasing high-intensity exercise capacity and lean body mass during training for high-performance athletes.\n
+"
+                android:textSize="12sp" />
+        </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
