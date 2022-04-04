@@ -8,47 +8,45 @@
     android:orientation="vertical"
     tools:context=".ui.help.HelpFragment">
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
         android:layout_marginTop="100dp"
-        android:drawableLeft="@drawable/ic_menu_gallery"
+        android:drawableLeft="@mipmap/ic_benas_foreground"
         android:text="Benas Steponavičius"
-        android:textSize="25sp"
+        android:textSize="35sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="260dp"
-        android:drawableLeft="@drawable/ic_menu_gallery"
+        android:layout_marginTop="400dp"
+        android:drawableLeft="@mipmap/ic_domantas_foreground"
         android:text="Domantas Malūkas"
-        android:textSize="25sp"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="340dp"
-        android:drawableLeft="@drawable/ic_menu_gallery"
+        android:layout_marginTop="550dp"
+        android:drawableLeft="@mipmap/ic_justas_foreground"
         android:text="Justas Juozelskis"
-        android:textSize="25sp"
+        android:textSize="35sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="180dp"
-        android:drawableLeft="@drawable/ic_menu_gallery"
+        android:layout_marginTop="250dp"
+        android:drawableLeft="@mipmap/ic_daiva_foreground"
         android:text="Daiva Trepkutė"
-        android:textSize="25sp"
+        android:textSize="35sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

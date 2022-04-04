@@ -8,13 +8,198 @@
     android:orientation="vertical"
     tools:context=".ui.info.InfoFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Achievements"
-        android:textSize="36sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="341dp" />
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:contentDescription="First Day"
+                android:minWidth="80sp"
+                android:minHeight="80sp"
+                android:src="@drawable/ic_achievement_first" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="First week"
+                android:minWidth="80sp"
+                android:minHeight="80sp"
+                android:src="@drawable/ic_achievement_week" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:contentDescription="3 Months"
+                android:minWidth="80sp"
+                android:minHeight="80sp"
+                android:src="@drawable/ic_achievement_months" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:contentDescription="Arms beginner"
+                android:minWidth="80sp"
+                android:minHeight="80sp"
+                android:src="@drawable/ic_achievement_arms1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="Arms advanced"
+                android:minWidth="80sp"
+                android:minHeight="80sp"
+                android:src="@drawable/ic_achievement_arms2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:contentDescription="Arms expert"
+                android:minWidth="80sp"
+                android:minHeight="80sp"
+                android:src="@drawable/ic_achievement_arms3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:contentDescription="Cardio beginner"
+                android:minWidth="80sp"
+                android:minHeight="80sp"
+                android:src="@drawable/ic_achievement_cardio1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="Cardio advanced"
+                android:minWidth="80sp"
+                android:minHeight="80sp"
+                android:src="@drawable/ic_achievement_cardio2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:contentDescription="Cardio expert"
+                android:minWidth="80sp"
+                android:minHeight="80sp"
+                android:src="@drawable/ic_achievement_cardio3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:contentDescription="Legs beginner"
+                android:minWidth="80sp"
+                android:minHeight="80sp"
+                android:src="@drawable/ic_achievement_legs1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="Legs advanced"
+                android:minWidth="80sp"
+                android:minHeight="80sp"
+                android:src="@drawable/ic_achievement_legs2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:contentDescription="Legs expert"
+                android:minWidth="80sp"
+                android:minHeight="80sp"
+                android:src="@drawable/ic_achievement_legs3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:contentDescription="Flexible beginner"
+                android:minWidth="80sp"
+                android:minHeight="80sp"
+                android:src="@drawable/ic_achievement_flexible1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="Flexible advanced"
+                android:minWidth="80sp"
+                android:minHeight="80sp"
+                android:src="@drawable/ic_achievement_flexible2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:contentDescription="Flexible expert"
+                android:minWidth="80sp"
+                android:minHeight="80sp"
+                android:src="@drawable/ic_achievement_flexible3" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

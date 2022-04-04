@@ -16,15 +16,28 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.fismo.databinding.FragmentExerciseBinding;
 
+import pl.droidsonroids.gif.GifImageView;
+
 public class ExerciseFragment extends Fragment {
 
     private ExerciseViewModel exerciseViewModelViewModel;
     private FragmentExerciseBinding binding;
-    public TextView countdownText;
+    public TextView countdownText, descriptionText;
+    GifImageView gifImage;
     public Button countdownButton;
     private CountDownTimer countDownTimer;
     private long timeLeftInMilliseconds = 12000;
     private boolean timerRunning = false;
+    String name;
+    String description;
+    int imageID;
+
+    public ExerciseFragment(String name, String description, long timeLeftInMilliseconds, int imageID){
+        this.name = name;
+        this.description = description;
+        this.timeLeftInMilliseconds = timeLeftInMilliseconds;
+        this.imageID = imageID;
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -34,21 +47,23 @@ public class ExerciseFragment extends Fragment {
         binding = FragmentExerciseBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+      //  final TextView textView = binding.textExercise;
+      //  exerciseViewModelViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+      //      @Override
+      //      public void onChanged(@Nullable String s) {
 
-
-
-        final TextView textView = binding.textExercise;
-        exerciseViewModelViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-
-                textView.setText(s);
-            }
-
-
-        });
+      ///          textView.setText(s);
+      //      }
+     //   });
         countdownText = binding.exerciseTimer;
         countdownButton = binding.exerciseButton;
+
+        TextView sample = binding.testString;
+        sample.setText(name);
+        descriptionText = binding.exerciseDescription;
+        gifImage = binding.exerciseImage;
+        descriptionText.setText(description);
+        gifImage.setImageResource(imageID);
 
         countdownButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,8 +71,6 @@ public class ExerciseFragment extends Fragment {
                 startStop();
             }
         });
-
-
         return root;
     }
 
@@ -81,7 +94,6 @@ public class ExerciseFragment extends Fragment {
                  timeLeftInMilliseconds = l;
                  updateTimer();
             }
-
             @Override
             public void onFinish() {
                 countdownText.setText("DONE!");
