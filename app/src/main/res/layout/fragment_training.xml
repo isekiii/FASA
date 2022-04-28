@@ -7,6 +7,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.info.InfoFragment">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
 
     <Button
         android:id="@+id/crunchesBtn"
@@ -27,14 +32,27 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:viewBindingIgnore="true" />
 
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:viewBindingIgnore="true" />
+
+    </LinearLayout>
+
     <FrameLayout
         android:id="@+id/fragment_container"
-        android:layout_width="360dp"
-        android:layout_height="591dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        >
 
 
     </FrameLayout>

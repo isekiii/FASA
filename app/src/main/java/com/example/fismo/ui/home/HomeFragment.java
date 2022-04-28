@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CalendarView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -19,6 +20,8 @@ public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
     private FragmentHomeBinding binding;
+    CalendarView calendarView;
+    TextView selectedDate;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -28,13 +31,17 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        calendarView = binding.calendarView;
+        selectedDate = binding.calendarSelectedText;
+
+        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
+            public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) {
+                selectedDate.setText("Selected date: " + dateBuild(i, i1+1, i2) + "\n Training: not implemented yet");
             }
         });
+
+
         return root;
     }
 
@@ -42,5 +49,17 @@ public class HomeFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+    }
+
+    String dateBuild(int year, int month, int day){
+        String mm, dd;
+
+        if (month < 10) mm = "0"+month;
+        else mm = month + "";
+
+        if (day < 10) dd = "0"+day;
+        else dd = day + "";
+
+        return dd+"/"+mm+"/"+year;
     }
 }

@@ -11,10 +11,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.fismo.R;
 import com.example.fismo.databinding.FragmentExerciseBinding;
+import com.example.fismo.ui.training.TrainingFragment;
 
 import pl.droidsonroids.gif.GifImageView;
 
@@ -58,12 +61,20 @@ public class ExerciseFragment extends Fragment {
         countdownText = binding.exerciseTimer;
         countdownButton = binding.exerciseButton;
 
-        TextView sample = binding.testString;
-        sample.setText(name);
         descriptionText = binding.exerciseDescription;
         gifImage = binding.exerciseImage;
         descriptionText.setText(description);
         gifImage.setImageResource(imageID);
+        Button backBtn = binding.backBtn;
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentTransaction fr = getParentFragmentManager().beginTransaction();
+                fr.replace(R.id.fragment_container, new TrainingFragment());
+                fr.commit();
+            }
+        });
 
         countdownButton.setOnClickListener(new View.OnClickListener() {
             @Override

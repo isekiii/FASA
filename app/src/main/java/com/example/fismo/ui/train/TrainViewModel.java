@@ -1,16 +1,15 @@
-package com.example.fismo.ui.calendar;
+package com.example.fismo.ui.train;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class CalendarViewModel extends ViewModel {
-
+public class TrainViewModel extends ViewModel {
     private MutableLiveData<String> mText;
 
-    public CalendarViewModel() {
+    public TrainViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is calendar fragment");
+        mText.setValue("This is training fragment");
     }
 
     public LiveData<String> getText() {

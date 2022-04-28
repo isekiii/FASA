@@ -34,6 +34,7 @@ public class TrainingFragment extends Fragment {
             "Step 3: Lowering phase: inhale and gently return yourself to your starting position.\n";
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
         trainingViewModel =
                 new ViewModelProvider(this).get(TrainingViewModel.class);
 
@@ -43,6 +44,7 @@ public class TrainingFragment extends Fragment {
 
         Button crunches = binding.crunchesBtn;
         Button plank = binding.sidePlankBtn;
+        Button test = binding.test;
 
         crunches.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceType")
@@ -51,6 +53,9 @@ public class TrainingFragment extends Fragment {
                 FragmentTransaction fr = getParentFragmentManager().beginTransaction();
                 fr.replace(R.id.fragment_container, new ExerciseFragment("Crunches", desc, 12000, R.drawable.crunches));
                 fr.commit();
+                crunches.setVisibility(View.INVISIBLE);
+                plank.setVisibility(View.INVISIBLE);
+                test.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -60,6 +65,8 @@ public class TrainingFragment extends Fragment {
                 FragmentTransaction fr = getParentFragmentManager().beginTransaction();
                 fr.replace(R.id.fragment_container, new ExerciseFragment("Side Plank", desc2, 30000, R.drawable.sideplank));
                 fr.commit();
+                crunches.setVisibility(View.INVISIBLE);
+               test.setVisibility(View.INVISIBLE);
             }
         });
 
