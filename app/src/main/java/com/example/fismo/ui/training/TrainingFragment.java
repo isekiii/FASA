@@ -58,7 +58,7 @@ public class TrainingFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 FragmentTransaction fr = getParentFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container, new ExerciseFragment("Side Plank", desc2, 30000, R.drawable.crunches));
+                fr.replace(R.id.fragment_container, new ExerciseFragment("Side Plank", desc2, 30000, R.drawable.sideplank));
                 fr.commit();
             }
         });
