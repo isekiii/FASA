@@ -22,26 +22,175 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:viewBindingIgnore="true" />
 
-    <Button
-        android:id="@+id/sidePlankBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="right"
-        android:text="Side Plank"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:viewBindingIgnore="true" />
+        <Button
+            android:id="@+id/sidePlankBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Side Plank"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
 
-    <Button
-        android:id="@+id/test"
+        <Button
+        android:id="@+id/BicepsStretch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="test"
+        android:text="Biceps Stretch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:viewBindingIgnore="true" />
 
+        <Button
+            android:id="@+id/Cobra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Cobra"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
+
+        <Button
+            android:id="@+id/CKC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CKC Parascapular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
+
+        <Button
+            android:id="@+id/Calf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Standing Calf Raises"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
+
+        <Button
+            android:id="@+id/NeckFlexion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Leteral Neck Flexion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
+
+        <Button
+            android:id="@+id/supermans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Supermans"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
+
+        <Button
+            android:id="@+id/SumoSquat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sumo squats"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
+
+        <Button
+            android:id="@+id/SidePlLEgs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Side Plank with straight leg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
+
+        <Button
+            android:id="@+id/HighPlank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="High Plank T-spine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
+
+        <Button
+            android:id="@+id/PushUps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Push-Ups"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
+
+        <Button
+            android:id="@+id/PushLegs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Push-Ups with Sigle-leg Raise"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
+
+        <Button
+            android:id="@+id/Prone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Prone scapular stabilization series"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
+
+        <Button
+            android:id="@+id/Twist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Spinal Twist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
+
+        <Button
+            android:id="@+id/Climbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Mountain Climbers"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
+
+        <Button
+            android:id="@+id/SupineSnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Supine Snow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
+
+        <Button
+            android:id="@+id/InchWorm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Inchworms"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
     </LinearLayout>
 
     <FrameLayout
