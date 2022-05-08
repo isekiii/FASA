@@ -1,6 +1,10 @@
 package com.example.fismo;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.Menu;
 
@@ -20,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
+    private boolean firstTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +52,25 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
+       // SharedPreferences prefs = getSharedPreferences("prefs", Context.MODE_PRIVATE);
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = prefs.edit();
+       // editor.putBoolean("firstTime", true);
+       // editor.apply();
+        firstTime = prefs.getBoolean("firstTime", true);
+
+
+        System.out.println("===========================    "+ firstTime + "     ===============" );
+        if (firstTime){
+            editor.putBoolean("firstTime", false);
+            editor.apply();
+            //show first activity
+            Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
+            startActivity(intent);
+        }
+
     }
 
     @Override

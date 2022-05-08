@@ -9,6 +9,21 @@
     tools:context=".ui.help.HelpFragment"
     android:layout_gravity="center_vertical">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About me:"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Name: Benas \nAge: 21 \nWeight: 78 KG\n"
+        android:layout_gravity="center"
+        android:id="@+id/aboutMe"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,6 +49,13 @@
         android:layout_height="wrap_content"
         android:text="Sound settings"
         android:layout_gravity="center"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Factory Reset"
+        android:layout_gravity="center"
+        android:id="@+id/reset"
         />
 
 

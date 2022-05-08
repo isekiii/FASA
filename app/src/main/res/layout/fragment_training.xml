@@ -6,7 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.info.InfoFragment">
+    tools:context=".ui.training.TrainingFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp">
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -192,6 +201,8 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:viewBindingIgnore="true" />
     </LinearLayout>
+
+    </ScrollView>
 
     <FrameLayout
         android:id="@+id/fragment_container"
